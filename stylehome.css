@@ -1,0 +1,1331 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+    width: 100%;
+    height: 51px;
+    background-color:#7893A8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 9.7%;
+    color: white;
+}
+
+.jam {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 134px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+
+.logo {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* MENU NAVIGASI */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #123d4b;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.menu a i {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.menu a:hover {
+    color: #eab668;
+}
+
+/* =========================
+   TOMBOL AKSI
+========================= */
+
+.aksi {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media screen and (max-width: 1200px) {
+
+    .navbar {
+        padding: 20px 4%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .topbar {
+        padding: 0 4%;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .aksi {
+        margin-top: 10px;
+    }
+
+    .jam {
+        font-size: 15px;
+    }
+
+    .konten {
+        min-height: 500px;
+    }
+
+}
+
+/* MENU HOVER */
+.menu a:hover, 
+.menu a.active{
+    color: #EAB668;
+}
+
+/* MENU AKTIF */
+nav a.active {
+    color: #EAB668;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #EAB668;
+    border-radius: 5px;
+}
+
+/* =================================
+   PENGATURAN DASAR
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #45484d;
+    background-color: #faf7f0;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   BAGIAN KISAH KAMI
+================================= */
+
+.kisah-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 90px 5%;
+    background-color: #faf7f0;
+    display: flex;
+    align-items: center;
+}
+
+.kisah-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* =================================
+   GAMBAR
+================================= */
+
+.kisah-image {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin-top: 8px;
+}
+
+.kisah-image img {
+    display: block;
+    width: 100% !important;
+    height: 520px !important;
+
+    max-width: none;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =================================
+   KONTEN TEKS
+================================= */
+
+.kisah-content {
+    width: 100%;
+}
+
+.kisah-content h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(38px, 4vw, 56px);
+    font-weight: 800;
+
+    color: #176b9e;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.kisah-content p {
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: 1.7;
+
+    color: #45484d;
+
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+
+/* =================================
+   TOMBOL BACA SELENGKAPNYA
+================================= */
+
+.btn-selengkapnya {
+    display: inline-block;
+
+    margin-top: 18px;
+    padding: 12px 35px;
+
+    background-color: #176fa5;
+    color: white;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border-radius: 35px;
+
+    transition: all 0.3s ease;
+}
+
+.btn-selengkapnya:hover {
+    background-color: #10567f;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   BAGIAN LANJUTAN
+================================= */
+
+.tentang-section {
+    padding: 90px 8%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.tentang-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.tentang-container h2 {
+    font-family: 'Baloo 2', cursive;
+
+    font-size: 36px;
+
+    color: #176b9e;
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+}
+
+.tentang-container p {
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* =================================
+   TOMBOL KEMBALI KE ATAS
+================================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 30px;
+    bottom: 125px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #176fa5;
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.back-to-top:hover {
+    background-color: #10567f;
+    transform: translateY(-4px);
+}
+
+
+/* =================================
+   TOMBOL WHATSAPP
+================================= */
+
+.whatsapp-button {
+    position: fixed;
+
+    right: 30px;
+    bottom: 50px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #20cf70;
+    color: #ffffff;
+
+    font-size: 30px;
+    font-weight: bold;
+    
+    text-decoration: none;
+    border-radius: 50%;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+    z-index: 100;
+}
+
+/* UKURAN LOGO WHATSAPP */
+.whatsapp-button img {
+    display: block;
+
+    width: 30px !important;
+    height: 30px !important;
+
+    object-fit: contain;
+}
+
+/* EFEK SAAT KURSOR DIARAHKAN */
+.whatsapp-button:hover {
+    background-color: #16a85a;
+    transform: scale(1.05);
+}
+
+/* =================================
+   RESPONSIVE TABLET
+================================= */
+
+@media screen and (max-width: 992px) {
+
+    .kisah-section {
+        padding: 70px 5%;
+    }
+
+    .kisah-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .kisah-image img {
+        height: 350px;
+    }
+
+    .kisah-content h1 {
+        font-size: 42px;
+    }
+
+    .kisah-content p {
+        font-size: 15px;
+    }
+
+    .btn-selengkapnya {
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+
+}
+
+
+/* =================================
+   RESPONSIVE HP
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    .kisah-section {
+        padding: 60px 6%;
+    }
+
+    .kisah-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .kisah-image {
+        margin-top: 15px;
+    }
+
+    .kisah-image img {
+        height: 300px;
+    }
+
+    .dekorasi-palet {
+        font-size: 65px;
+        top: -40px;
+        left: -12px;
+    }
+
+    .kisah-content h1 {
+        font-size: 40px;
+        margin-bottom: 18px;
+    }
+
+    .kisah-content p {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 18px;
+    }
+
+    .btn-selengkapnya {
+        margin-top: 10px;
+    }
+
+    .tentang-section {
+        padding: 60px 6%;
+    }
+
+    .tentang-container h2 {
+        font-size: 29px;
+    }
+
+    .tentang-container p {
+        font-size: 15px;
+    }
+
+    .back-to-top {
+        right: 18px;
+        bottom: 100px;
+
+        width: 45px;
+        height: 45px;
+
+        font-size: 5px;
+     }
+
+    /* TOMBOL WHATSAPP */
+    .whatsapp-button {
+        position: fixed !important;
+
+        right: 20px !important;
+        bottom: 20px !important;
+        left: auto !important;
+        top: auto !important;
+
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #20cf70;
+        border-radius: 50%;
+
+        z-index: 99999;
+        text-decoration: none;
+    }
+
+    /* LOGO WHATSAPP */
+    .whatsapp-button img {
+        display: block;
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    /* EFEK HOVER */
+    .whatsapp-button:hover {
+        background-color: #16a85a;
+        transform: scale(1.05);
+    }
+}
+
+
+/* =================================
+   RESPONSIVE HP KECIL
+================================= */
+
+@media screen and (max-width: 400px) {
+
+    .kisah-content h1 {
+        font-size: 34px;
+    }
+
+    .kisah-image img {
+        height: 240px;
+    }
+
+    .kisah-content p {
+        font-size: 14px;
+    }
+
+    .btn-selengkapnya {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+
+}
+
+/* ================= PENGATURAN UMUM ================= */
+
+.program-section,
+.unggulan-section,
+.gallery-section,
+.testimonial-section {
+    padding: 70px 9%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.program-section h2,
+.unggulan-section h2,
+.gallery-section h2,
+.testimonial-section h2 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 45px;
+    line-height: 1.7;
+}
+
+
+/* ================= PROGRAM PENDIDIKAN ================= */
+
+.program-section {
+    background: #E8C6B8;
+}
+
+.program-section h2 {
+    color: white;
+}
+
+.program-section .section-subtitle {
+    color: white;
+}
+
+.program-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.program-card {
+    background: #fff8f5;
+    border-radius: 17px;
+
+    padding: 90px 22px 25px;
+
+    position: relative;
+    margin-top: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    min-height: 400px;
+}
+
+.program-card h3 {
+    font-size: 27px;
+    color: #efa32e;
+    margin: 8px 0 18px;
+    text-align: center;
+}
+
+.program-card:nth-child(2) h3 {
+    color: #62b47d;
+}
+
+.program-card p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* UKURAN FOTO PROGRAM */
+.program-card img {
+    width: 165px;
+    height: 150px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.read-button {
+    display: inline-block;
+    background: #176c9f;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 35px;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.read-button:hover {
+    background: #10547e;
+    transform: translateY(-3px);
+}
+
+
+/* ================= PROGRAM UNGGULAN ================= */
+
+/* ================= PROGRAM UNGGULAN ================= */
+
+.unggulan-section {
+    background: #faf7f0;
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.unggulan-section h2 {
+    color: #176c9f;
+    margin-bottom: 45px;
+}
+
+/* CONTAINER */
+.unggulan-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ITEM PROGRAM */
+.unggulan-item {
+    background: white;
+    padding: 30px 22px;
+
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: 280px;
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .unggulan-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .unggulan-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .unggulan-item {
+        min-height: 230px;
+        padding: 25px 20px;
+    }
+
+    .unggulan-section h2 {
+        font-size: 30px;
+    }
+}
+
+/* ICON */
+.unggulan-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+/* JUDUL */
+.unggulan-item h3 {
+    color: #e66e60;
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* DESKRIPSI */
+.unggulan-item p {
+    color: #777;
+    line-height: 1.7;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* HOVER */
+.unggulan-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .unggulan-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .unggulan-item,
+    .unggulan-item:nth-child(4),
+    .unggulan-item:nth-child(5) {
+        grid-column: auto;
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .unggulan-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .unggulan-item {
+        min-height: 230px;
+        padding: 25px 20px;
+    }
+
+    .unggulan-section h2 {
+        font-size: 30px;
+    }
+}
+
+/* ================= GALERI ================= */
+
+.gallery-section {
+    background: #65b781;
+}
+
+.gallery-section h2 {
+    color: white;
+}
+
+.gallery-section .section-subtitle {
+    color: white;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ================= TESTIMONI ================= */
+
+.testimonial-section {
+    background: #faf7f0;
+}
+
+.testimonial-section h2 {
+    color: #176c9f;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    text-align: center;
+}
+
+.quote-icon {
+    color: #efa32e;
+    font-size: 65px;
+    font-weight: bold;
+    height: 60px;
+}
+
+.testimonial-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 15px 0 25px;
+}
+
+.testimonial-card h3 {
+    color: #176c9f;
+    font-size: 18px;
+}
+
+.testimonial-card span {
+    color: #888;
+    font-size: 13px;
+}
+
+
+
+/* ================= ALAMAT KAMI / FOOTER ================= */
+
+.footer-section {
+    width: 100%;
+    background-color: #EAF4F8;
+    padding-top: 55px;
+    color: #333;
+}
+
+/* FOOTER CONTAINER */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px 45px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.5fr;
+    gap: 55px;
+    align-items: start;
+}
+
+/* LOGO DAN IDENTITAS */
+.footer-brand img {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* JUDUL FOOTER */
+.footer-menu h3,
+.footer-address h3 {
+    font-size: 19px;
+    color: #176c9f;
+    margin-bottom: 12px;
+}
+
+.footer-line {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #e66e60;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #e66e60;
+    padding-left: 5px;
+}
+
+/* ALAMAT */
+.footer-address p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.operasional-title {
+    margin-bottom: 5px !important;
+}
+
+.operasional-list {
+    margin-left: 25px;
+    margin-bottom: 18px;
+}
+
+.operasional-list p {
+    margin-bottom: 3px;
+}
+
+/* GOOGLE MAPS */
+.footer-map {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* TOMBOL MAPS */
+.map-button {
+    display: inline-block;
+    background-color: #e66e60;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background-color: #176c9f;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    background-color: #176c9f;
+    text-align: center;
+    padding: 17px 15px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 0 25px 35px;
+    }
+
+    .footer-brand img {
+        width: 190px;
+    }
+
+    .footer-map iframe {
+        height: 200px;
+    }
+
+}
+
+
+
+
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* CONTOH TAMPILAN HALAMAN UTAMA */
+header {
+    padding: 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+/* =========================
+   POP UP PROMOSI
+========================= */
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+    z-index: 99999;
+}
+
+/* CONTAINER */
+
+.popup-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 390px;
+    max-height: 90vh;
+
+    padding: 8px;
+    background: #ffffff;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+
+    animation: popupMasuk 0.5s ease;
+}
+
+@keyframes popupMasuk {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* SLIDER */
+
+.popup-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.popup-slides {
+    position: relative;
+    width: 100%;
+}
+
+.popup-image {
+    display: none;
+
+    width: 100%;
+    height: auto;
+    max-height: calc(90vh - 45px);
+
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.popup-image.active {
+    display: block;
+}
+
+/* TOMBOL CLOSE */
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #222222;
+
+    font-size: 24px;
+    line-height: 1;
+
+    cursor: pointer;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.popup-close:hover {
+    background: #eeeeee;
+}
+
+/* NAVIGASI TITIK */
+
+.popup-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+    padding: 8px 0 3px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #cccccc;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    width: 18px;
+    background: #555555;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE HP */
+
+@media screen and (max-width: 480px) {
+
+    .popup-container {
+        max-width: 340px;
+        padding: 6px;
+    }
+
+    .popup-close {
+        width: 28px;
+        height: 28px;
+        font-size: 21px;
+    }
+
+}
+
+.popup-slider {
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+}
+
+.popup-slider:active {
+    cursor: grabbing;
+}
+
+.popup-image {
+    user-select: none;
+    -webkit-user-drag: none;
+}

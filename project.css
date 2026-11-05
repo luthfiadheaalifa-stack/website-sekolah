@@ -1,0 +1,630 @@
+
+/* =================================
+   PENGATURAN DASAR
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #45484D;
+    background-color: #F7F5EF;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PENGATURAN HEADER
+========================= */
+
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-top: 30px; /* Jarak putih di atas Top Bar */
+    box-sizing: border-box;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+    width: 100%;
+    height: 51px;
+    background-color: #7893A8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 9.7%;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.jam {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* =========================
+   JARAK PUTIH
+========================= */
+
+.header-spacer {
+    width: 100%;
+    height: 0;
+    background-color: #FFFFFF;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 134px;
+    background-color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+
+.logo {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* MENU NAVIGASI */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #123D4B;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #EAB668;
+}
+
+/* MENU AKTIF */
+
+nav a.active {
+    color: #EAB668;
+    font-weight: 700;
+    position: relative;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #EAB668;
+    border-radius: 5px;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media screen and (max-width: 1200px) {
+
+    .navbar {
+        padding: 20px 4%;
+        height: auto;
+        min-height: 134px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .topbar {
+        padding: 0 4%;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media screen and (max-width: 700px) {
+
+    header {
+        padding-top: 15px;
+    }
+
+    .topbar {
+        height: 45px;
+    }
+
+    .jam {
+        font-size: 14px;
+    }
+
+    .social img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+/* =================================
+   PENGATURAN DASAR
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #45484d;
+    background-color: #faf7f0;
+    line-height: 1.7;
+}
+
+/* =================================
+   PROJECT SECTION
+================================= */
+
+.project-section {
+    width: 100%;
+    background-color: #F7F5EF;
+
+    padding: 55px 7% 75px;
+    min-height: 100vh;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.project-heading {
+    max-width: 1250px;
+    margin: 0 auto 35px;
+}
+
+.section-label {
+    color: #78936D;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.project-heading h1 {
+    color: #4F5D3F;
+    font-size: 38px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.project-heading p {
+    color: #747C6D;
+    font-size: 16px;
+}
+
+
+/* =================================
+   MAIN CARD
+================================= */
+
+.project-card {
+    width: 100%;
+    max-width: 966px;
+
+    margin: 0 auto;
+
+    background-color: #E8EDDA;
+
+    padding: 32px;
+    border-radius: 25px;
+
+    border: 1px solid #E4E4CE;
+
+    box-shadow:
+        0 12px 35px rgba(79, 93, 85, 0.08);
+}
+
+
+/* =================================
+   PROFILE
+================================= */
+
+.profile {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+
+/* FOTO PROFIL */
+
+.project-card .profile .foto {
+    width: 140px !important;
+    height: 140px !important;
+
+    min-width: 140px;
+    max-width: 140px;
+
+    flex: 0 0 140px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 5px solid #FFFFFF;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card .profile .foto img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+
+/* IDENTITAS */
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    color: #4F5D3F;
+    font-size: 26px;
+    font-weight: 900;
+
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #687362;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* BADGE */
+
+.project-badge {
+    display: inline-block;
+
+    background-color: #FFFFFF;
+    color: #647B53;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* =================================
+   INFORMATION GRID
+================================= */
+
+.information-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+.info-item {
+    background-color: #FFFEFA;
+
+    padding: 17px 19px;
+
+    border-radius: 18px;
+    border: 1px solid #E8E1D0;
+
+    transition: 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 15px rgba(79, 93, 85, 0.08);
+}
+
+.info-item.full {
+    grid-column: span 2;
+}
+
+.info-item span {
+    display: block;
+
+    color: #78936D;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+}
+
+.info-item h3 {
+    color: #4F5D3F;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.5;
+}
+
+
+/* ================= ALAMAT KAMI / FOOTER ================= */
+
+.footer-section {
+    width: 100%;
+    background-color: #EAF4F8;
+    padding-top: 55px;
+    color: #333;
+}
+
+/* FOOTER CONTAINER */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px 45px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.5fr;
+    gap: 55px;
+    align-items: start;
+}
+
+/* LOGO DAN IDENTITAS */
+.footer-brand img {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* JUDUL FOOTER */
+.footer-menu h3,
+.footer-address h3 {
+    font-size: 19px;
+    color: #176c9f;
+    margin-bottom: 12px;
+}
+
+.footer-line {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #e66e60;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #e66e60;
+    padding-left: 5px;
+}
+
+/* ALAMAT */
+.footer-address p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.operasional-title {
+    margin-bottom: 5px !important;
+}
+
+.operasional-list {
+    margin-left: 25px;
+    margin-bottom: 18px;
+}
+
+.operasional-list p {
+    margin-bottom: 3px;
+}
+
+/* GOOGLE MAPS */
+.footer-map {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* TOMBOL MAPS */
+.map-button {
+    display: inline-block;
+    background-color: #e66e60;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background-color: #176c9f;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    background-color: #176c9f;
+    text-align: center;
+    padding: 17px 15px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 0 25px 35px;
+    }
+
+    .footer-brand img {
+        width: 190px;
+    }
+
+    .footer-map iframe {
+        height: 200px;
+    }
+
+}
+

@@ -1,0 +1,1369 @@
+/* =========================================
+   RESET CSS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background-color: #FAF7F0;
+    color: #45484D;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.topbar {
+    width: 100%;
+    height: 51px;
+    background-color: #7893A8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 9.7%;
+    color: #FFFFFF;
+}
+
+.jam {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+.navbar {
+    width: 100%;
+    height: 134px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a,
+.navbar .menu a {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #123D4B;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.menu a i {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #EAB668;
+}
+
+nav a.active {
+    color: #EAB668;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #EAB668;
+    border-radius: 5px;
+}
+
+/* JARAK PUTIH DI ATAS TOPBAR */
+header {
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+
+
+/* =========================================
+   TOMBOL AKSI
+========================================= */
+
+.aksi {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+
+/* =========================================
+   HEADER SPMB
+========================================= */
+
+.spmb-header {
+    min-height: 300px;
+
+    background:
+        linear-gradient(
+            rgba(18, 61, 75, 0.7),
+            rgba(18, 61, 75, 0.7)
+        ),
+        url("foto/header-spmb.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 50px 8%;
+}
+
+.spmb-header-content {
+    max-width: 750px;
+}
+
+.spmb-header h1 {
+    font-family: "Baloo 2", cursive;
+    font-size: 45px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.spmb-header p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   SECTION PENDAFTARAN
+========================================= */
+
+.pendaftaran-section {
+    width: 100%;
+    padding: 70px 8%;
+    background-color: #FAF7F0;
+}
+
+.pendaftaran-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pendaftaran-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pendaftaran-heading span {
+    color: #EFA32E;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pendaftaran-heading h2 {
+    font-family: "Baloo 2", cursive;
+    font-size: 32px;
+    color: #176B9E;
+    margin: 12px 0;
+}
+
+.pendaftaran-heading p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    width: 90%;
+    min-height: 470px;
+    margin: 35px auto;
+    padding: 60px 7%;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        120deg,
+        #F8E8D9,
+        #F9EFDA,
+        #E4EEE4
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 540px;
+}
+
+.subtitle {
+    color: #417D75;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 15px 0;
+    color: #263B52;
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #417D75;
+    font-style: italic;
+}
+
+.hero-content > p:not(.subtitle) {
+    color: #65717B;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 30px;
+    background: #65B781;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover,
+.btn-header:hover,
+.btn-contact:hover {
+    background: #16A85A;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO DECORATION
+========================================= */
+
+.hero-image {
+    width: 340px;
+    height: 320px;
+    position: relative;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-circle {
+    width: 220px;
+    height: 220px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: #FFFFFF;
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(38, 59, 82, 0.12);
+}
+
+.hero-circle img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.bubble {
+    position: absolute;
+    padding: 9px 17px;
+    border-radius: 15px;
+
+    background: #FFFFFF;
+    color: #123D4B;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(38, 59, 82, 0.1);
+}
+
+.bubble-one {
+    top: 25px;
+    left: 0;
+    transform: rotate(-8deg);
+}
+
+.bubble-two {
+    right: 0;
+    top: 120px;
+    transform: rotate(7deg);
+}
+
+.bubble-three {
+    left: 15px;
+    bottom: 20px;
+    transform: rotate(5deg);
+}
+
+
+/* =========================================
+   SECTION UMUM
+========================================= */
+
+.section {
+    width: 90%;
+    max-width: 1080px;
+    margin: 90px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section-title > p {
+    color: #65B781;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin: 8px 0;
+    color: #176B9E;
+    font-family: Georgia, serif;
+    font-size: 37px;
+}
+
+.section-title span {
+    color: #666666;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PROGRAM
+========================================= */
+
+.program-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.program-card {
+    padding: 28px;
+    border-radius: 22px;
+    min-height: 240px;
+    box-shadow: 0 10px 25px rgba(38, 59, 82, 0.07);
+}
+
+.peach {
+    background: #E8C6B8;
+}
+
+.yellow {
+    background: #F9EFDA;
+}
+
+.green {
+    background: #E4EEE4;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+
+    display: grid;
+    place-items: center;
+
+    margin-bottom: 15px;
+    border-radius: 17px;
+
+    background: #FFFFFF;
+    font-size: 26px;
+}
+
+.program-card h3 {
+    color: #176B9E;
+    font-size: 19px;
+}
+
+.program-card h4 {
+    margin: 4px 0 10px;
+    color: #417D75;
+    font-size: 12px;
+}
+
+.program-card p {
+    font-size: 12px;
+    color: #45484D;
+}
+
+
+/* =========================================
+   BROSUR DAN PENDAFTARAN
+========================================= */
+
+.brosur-container {
+    display: flex;
+    justify-content: center;
+
+    max-width: 750px;
+    margin: 0 auto 40px;
+    padding: 15px;
+
+    background-color: #FFFFFF;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(18, 61, 75, 0.10);
+}
+
+.brosur-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+
+/* =========================================
+   PENDAFTARAN OFFLINE
+========================================= */
+
+.offline-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+
+    max-width: 900px;
+    margin: 35px auto 0;
+    padding: 30px;
+
+    background: #E4EEE4;
+    border-radius: 18px;
+    border-left: 5px solid #65B781;
+
+    box-shadow: 0 5px 18px rgba(18, 61, 75, 0.06);
+}
+
+.offline-icon {
+    font-size: 38px;
+    background: #F9EFDA;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.offline-content h3,
+.offline-info h3 {
+    color: #176B9E;
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.offline-content p,
+.offline-info p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.offline-note {
+    background: #FFF8F5;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   ALUR PENDAFTARAN
+========================================= */
+
+.process-section {
+    max-width: 1150px;
+    padding: 50px 5%;
+    border-radius: 28px;
+    background: #E8C6B8;
+}
+
+.process-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.process-card {
+    padding: 20px 15px;
+    border-radius: 17px;
+    background: #FFFFFF;
+}
+
+.process-card span {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 12px;
+    place-items: center;
+    border-radius: 50%;
+    background: #65B781;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.process-card h3 {
+    margin-bottom: 8px;
+    color: #176B9E;
+    font-size: 14px;
+}
+
+.process-card p {
+    color: #666666;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   TABEL
+========================================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 18px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(38, 59, 82, 0.07);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    padding: 17px 20px;
+    background: #7893A8;
+    color: #FFFFFF;
+}
+
+td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #E8C6B8;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody td:nth-child(2) {
+    color: #176B9E;
+    font-weight: 600;
+}
+
+.requirements-table td:first-child {
+    text-align: center;
+}
+
+
+/* =========================================
+   INFORMASI DOKUMEN
+========================================= */
+
+.document-info {
+    display: flex;
+    gap: 18px;
+    margin-top: 25px;
+    padding: 23px;
+    border-radius: 18px;
+    background: #E4EEE4;
+}
+
+.document-icon {
+    font-size: 30px;
+}
+
+.document-info h3 {
+    color: #176B9E;
+    font-size: 17px;
+}
+
+.document-info p {
+    margin-top: 5px;
+    color: #666666;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   BIAYA
+========================================= */
+
+.fees-section {
+    max-width: 950px;
+}
+
+.highlight td {
+    background: #F9EFDA;
+    font-weight: bold;
+}
+
+.fee-info {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 18px;
+    background: #E4EEE4;
+}
+
+.fee-info h3 {
+    color: #176B9E;
+    font-size: 18px;
+}
+
+.fee-info ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.fee-info li {
+    margin: 6px 0;
+}
+
+.note {
+    margin-top: 18px;
+    color: #666666;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   GELOMBANG PENDAFTARAN
+========================================= */
+
+.wave-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.wave-card {
+    position: relative;
+    padding: 28px 23px;
+    border: 1px solid #E8C6B8;
+    border-radius: 22px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(38, 59, 82, 0.07);
+}
+
+.wave-card.featured {
+    border: 2px solid #EAB668;
+    background: #FFF8F5;
+}
+
+.promo {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: #EAB668;
+    color: #123D4B;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.wave-card h3 {
+    color: #417D75;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.date {
+    min-height: 55px;
+    margin: 12px 0;
+    color: #176B9E;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    border-top: 1px solid #E8C6B8;
+}
+
+.price small {
+    color: #666666;
+    font-size: 11px;
+}
+
+.price strong {
+    color: #176B9E;
+    font-size: 20px;
+}
+
+.btn-outline {
+    display: block;
+    margin-top: 15px;
+    padding: 11px;
+
+    border: 1px solid #65B781;
+    border-radius: 25px;
+
+    color: #417D75;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #65B781;
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   TOMBOL PENDAFTARAN
+========================================= */
+
+.daftar-container {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.daftar-container h3 {
+    font-family: "Baloo 2", cursive;
+    font-size: 25px;
+    color: #176B9E;
+    margin-bottom: 8px;
+}
+
+.daftar-container p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #45484D;
+    margin-bottom: 22px;
+}
+
+.btn-daftar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 15px 35px;
+    background-color: #65B781;
+    color: #FFFFFF;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn-daftar:hover {
+    background-color: #176B9E;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-daftar span {
+    font-size: 19px;
+}
+
+
+/* =========================================
+   KONTAK
+========================================= */
+
+.contact-section {
+    width: 90%;
+    max-width: 1080px;
+    margin: 80px auto 60px;
+    padding: 42px 5%;
+
+    border-radius: 25px;
+    background: #176B9E;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.contact-section .subtitle {
+    color: #E4EEE4;
+}
+
+.contact-section h2 {
+    margin: 8px 0;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.contact-section p:not(.subtitle) {
+    max-width: 600px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.btn-contact {
+    flex-shrink: 0;
+    padding: 13px 22px;
+    border-radius: 25px;
+    background: #65B781;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px 45px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.5fr;
+    gap: 55px;
+    align-items: start;
+}
+
+
+/* =========================================
+   FOOTER ALAMAT KAMI
+========================================= */
+
+.footer-section {
+    width: 100%;
+    background-color: #EAF4F8;
+    padding-top: 55px;
+    color: #333;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px 45px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.5fr;
+    gap: 55px;
+    align-items: start;
+}
+
+.footer-brand img {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.footer-menu h3,
+.footer-address h3 {
+    font-size: 19px;
+    color: #176c9f;
+    margin-bottom: 12px;
+}
+
+.footer-line {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #e66e60;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #e66e60;
+    padding-left: 5px;
+}
+
+.footer-address p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.operasional-title {
+    margin-bottom: 5px !important;
+}
+
+.operasional-list {
+    margin-left: 25px;
+    margin-bottom: 18px;
+}
+
+.operasional-list p {
+    margin-bottom: 3px;
+}
+
+.footer-map {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.map-button {
+    display: inline-block;
+    background-color: #e66e60;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background-color: #176c9f;
+}
+
+.footer-bottom {
+    background-color: #176c9f;
+    text-align: center;
+    padding: 17px 15px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media screen and (max-width: 1200px) {
+
+    .navbar {
+        min-height: 110px;
+        height: auto;
+        padding: 20px 4%;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .menu {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .menu a,
+    .navbar .menu a {
+        font-size: 16px;
+    }
+
+    .topbar {
+        padding: 0 4%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .process-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 4%;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    .menu a,
+    .navbar .menu a {
+        font-size: 15px;
+    }
+
+    .hero {
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .program-container,
+    .wave-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media screen and (max-width: 700px) {
+
+    .topbar {
+        padding: 0 5%;
+    }
+
+    .jam {
+        font-size: 15px;
+    }
+
+    .social {
+        gap: 12px;
+    }
+
+    .social img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: unset;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .menu a,
+    .navbar .menu a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 7%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 260px;
+        transform: scale(0.85);
+    }
+
+    .section {
+        margin: 65px auto;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .program-container,
+    .wave-container {
+        grid-template-columns: 1fr;
+    }
+
+    .process-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .table-container table {
+        min-width: 570px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 7%;
+    }
+
+    .contact-section h2 {
+        font-size: 27px;
+    }
+
+    .pendaftaran-section {
+        padding: 55px 6%;
+    }
+
+    .pendaftaran-heading h2 {
+        font-size: 28px;
+    }
+
+    .brosur-container {
+        padding: 8px;
+    }
+
+    .daftar-container h3 {
+        font-size: 21px;
+    }
+
+    .btn-daftar {
+        font-size: 13px;
+        padding: 13px 27px;
+    }
+
+    .offline-info {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .spmb-header h1 {
+        font-size: 32px;
+    }
+
+    .spmb-header p {
+        font-size: 13px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 0 25px 35px;
+    }
+
+    .footer-brand img {
+        width: 190px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .topbar {
+        padding: 0 5%;
+    }
+
+    .jam {
+        font-size: 15px;
+    }
+
+    .social {
+        gap: 12px;
+    }
+
+    .social img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: unset;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px 5%;
+        gap: 18px;
+    }
+
+    .logo {
+        width: auto;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .menu a,
+    .navbar .menu a {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 0 25px 35px;
+    }
+}

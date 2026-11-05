@@ -1,0 +1,787 @@
+
+/* ==============================
+   PENGATURAN DASAR
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', 'Arial', sans-serif;
+    color: #34434a;
+    background-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =========================
+   TOP BAR MIMORI
+========================= */
+
+.topbar {
+    width: 100%;
+    min-height: 51px;
+    background-color: #7893A8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 9.7%;
+    color: white;
+}
+
+.jam {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* =========================
+   NAVBAR MIMORI
+========================= */
+
+.navbar {
+    width: 100%;
+    min-height: 134px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #123d4b;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #eab668;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 20px 4%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .topbar {
+        padding: 5px 4%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .jam {
+        font-size: 15px;
+    }
+
+    .topbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .social img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/* =================================
+   PENGATURAN DASAR
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #45484d;
+    background-color: #faf7f0;
+    line-height: 1.7;
+}
+
+/* ==============================
+   CONTACT / PENDAFTARAN
+============================== */
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding: 65px 9%;
+    background: linear-gradient(
+        120deg,
+        #20afa5,
+        #55cfc2
+    );
+
+    color: #ffffff;
+}
+
+/* Konten teks */
+
+.contact-section > div {
+    max-width: 650px;
+}
+
+.contact-section .subtitle {
+    color: #fff0d5;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.contact-section p:not(.subtitle) {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f2fffd;
+}
+
+/* Tombol daftar */
+
+.btn-contact {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 28px;
+    min-width: 210px;
+
+    background-color: #f4a044;
+    color: #ffffff;
+
+    border: 2px solid #f4a044;
+    border-radius: 35px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #ffffff;
+    color: #16a85a;
+    border-color: #ffffff;
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ==============================
+   RESPONSIVE TABLET
+============================== */
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        gap: 18px;
+        padding: 18px 4%;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 45px 7%;
+        gap: 25px;
+    }
+
+    .contact-section h2 {
+        font-size: 27px;
+    }
+
+    .btn-contact {
+        align-self: flex-start;
+    }
+}
+
+/* ==============================
+   RESPONSIVE HP
+============================== */
+
+@media screen and (max-width: 480px) {
+
+    .menu {
+        gap: 14px;
+        padding: 16px 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .contact-section {
+        padding: 40px 22px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .contact-section p:not(.subtitle) {
+        font-size: 14px;
+    }
+
+    .btn-contact {
+        width: 100%;
+        padding: 14px 20px;
+    }
+}
+
+
+/* Tombol utama */
+.btn-primary {
+    background-color: #f4a044;
+    color: white;
+    border: 2px solid #f4a044;
+}
+
+.btn-primary:hover {
+    background-color: #e58b2c;
+    border-color: #e58b2c;
+    transform: translateY(-3px);
+}
+
+/* Tombol gelombang lainnya */
+.btn-outline {
+    background-color: white;
+    color: #20afa5;
+    border: 2px solid #20afa5;
+}
+
+.btn-outline:hover {
+    background-color: #20afa5;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Tombol kontak */
+.btn-contact {
+    background-color: white;
+    color: #159b91;
+    border: 2px solid white;
+}
+
+.btn-contact:hover {
+    background-color: #e9faf7;
+    transform: translateY(-3px);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --teal: #16a85a;
+    --teal-dark: #079c94;
+    --orange: #ff9b24;
+    --ink: #343a40;
+    --muted: #77808b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f7f8;
+    color: var(--ink);
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.brand strong {
+    font-size: 11px;
+}
+
+.brand b {
+    font-size: 22px;
+}
+
+.brand-mark {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    color: white;
+    background: var(--orange);
+    border: 4px solid #f4dcae;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.contact {
+    color: #606973;
+    font-size: 14px;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 54px 20px 62px;
+    color: white;
+    background: linear-gradient(120deg, #16a85a, #05a99f);
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 900;
+}
+
+.hero p:last-child {
+    margin-top: 12px;
+}
+
+/* CONTAINER */
+
+.container {
+    width: min(1180px, calc(100% - 32px));
+    margin: -28px auto 50px;
+    position: relative;
+}
+
+.form-section {
+    background: white;
+    border: 1px solid #e2e6e9;
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 5px 20px #263b4608;
+}
+
+/* JUDUL BAGIAN */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section-heading > span {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    color: white;
+    background: var(--teal);
+    font-weight: 900;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.section-heading p {
+    margin: 3px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* FORM GRID */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px 24px;
+}
+
+.field {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.field.full,
+.upload-field.full {
+    grid-column: 1 / -1;
+}
+
+.field label,
+.upload-field > label {
+    font-size: 14px;
+    font-weight: 800;
+    color: #444b52;
+}
+
+em {
+    color: #e45d50;
+    font-style: normal;
+}
+
+/* INPUT */
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+select,
+textarea {
+    width: 100%;
+    min-height: 43px;
+    padding: 10px 13px;
+    border: 1px solid #cfd7df;
+    border-radius: 6px;
+    outline: none;
+    background: white;
+    color: #424b54;
+    font: inherit;
+    font-size: 14px;
+    transition: .2s;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 3px #08b7ad1a;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #98a1aa;
+}
+
+/* SUBHEADING */
+
+.subheading {
+    margin: 25px 0 17px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #edf0f2;
+    font-size: 15px;
+    color: var(--teal-dark);
+}
+
+/* RADIO */
+
+.radio-line {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    min-height: 42px;
+}
+
+.radio-line label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--teal-dark);
+    width: 17px;
+    height: 17px;
+}
+
+/* DATA WALI */
+
+.guardian-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px dashed #a8dcd8;
+    border-radius: 9px;
+    background: #f5fcfb;
+}
+
+.guardian-box[hidden] {
+    display: none;
+}
+
+/* UPLOAD */
+
+.upload-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.upload-field {
+    min-width: 0;
+    padding: 17px;
+    border: 1px solid #e1e7eb;
+    border-radius: 8px;
+    background: #fbfcfd;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+input[type="file"] {
+    width: 100%;
+    font: inherit;
+    font-size: 13px;
+}
+
+input[type="file"]::file-selector-button {
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 11px;
+    margin-right: 10px;
+    color: #087f79;
+    background: #e1f6f4;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* KONFIRMASI */
+
+.confirmation {
+    display: grid;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 8px;
+    background: #f7fafb;
+}
+
+.check-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #505a63;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.check-line input {
+    margin-top: 3px;
+    flex: 0 0 auto;
+}
+
+.notice {
+    margin-top: 18px;
+    padding: 13px 15px;
+    border-left: 3px solid var(--orange);
+    background: #fff9f0;
+    color: #6b5a43;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* BUTTON */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 7px;
+    padding: 12px 22px;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    color: white;
+    background: var(--orange);
+}
+
+.btn-primary:hover {
+    background: #ed8913;
+}
+
+.btn-light {
+    color: #56616a;
+    background: #edf1f3;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-message.success {
+    color: #07836e;
+}
+
+footer {
+    text-align: center;
+    color: #8a939b;
+    font-size: 12px;
+    padding: 8px 0 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 42px 18px 52px;
+    }
+
+    .form-grid,
+    .upload-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .field.full,
+    .upload-field.full {
+        grid-column: auto;
+    }
+
+    .form-section {
+        padding: 22px 17px;
+    }
+
+    .section-heading h2 {
+        font-size: 17px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

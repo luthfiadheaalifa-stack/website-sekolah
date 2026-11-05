@@ -1,0 +1,877 @@
+
+/* =====================================
+   RESET DAN PENGATURAN DASAR
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf7f0;
+    color: #45484d;
+    overflow-x: hidden;
+}
+
+/* =====================================
+   TOP BAR
+===================================== */
+.topbar {
+    width: 100%;
+    height: 51px;
+    background-color: #7893A8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9.7%;
+    color: #ffffff;
+}
+
+.jam {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+.navbar {
+    width: 100%;
+    height: 134px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar .menu a {
+    position: relative;
+    color: #123d4b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar .menu a:hover,
+.navbar .menu a.active {
+    color: #EAB668;
+}
+
+.navbar .menu a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #EAB668;
+    border-radius: 5px;
+}
+
+.menu a i {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.aksi {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+/* JARAK PUTIH DI ATAS TOPBAR */
+header {
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+/* =====================================
+   RESPONSIVE TABLET / LAYAR DIBAGI DUA
+===================================== */
+@media screen and (max-width: 1200px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px 4%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar .menu a {
+        font-size: 15px;
+    }
+
+    .topbar {
+        padding: 0 4%;
+    }
+}
+
+/* =====================================
+   RESPONSIVE HP
+===================================== */
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .navbar .menu a {
+        font-size: 16px;
+    }
+
+    .aksi {
+        margin-top: 10px;
+    }
+
+    .jam {
+        font-size: 15px;
+    }
+
+    .konten {
+        min-height: 500px;
+    }
+}
+
+/* =====================================
+   BACKGROUND PROGRAM PENDIDIKAN
+===================================== */
+
+.program-header {
+    width: 100%;
+    min-height: 360px;
+
+    background-image:
+        linear-gradient(
+            rgba(250, 247, 240, 0.45),
+            rgba(250, 247, 240, 0.45)
+        ),
+        url("foto/ruang\ kelas\ montesori.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 60px 7%;
+    box-sizing: border-box;
+}
+
+.program-header-content h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 55px;
+    color: #176b9e;
+    margin-bottom: 15px;
+}
+
+.program-header-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #b9e38d;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* =====================================
+   LAYANAN PENDIDIKAN
+===================================== */
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.layanan-card {
+    background-color: #ffffff;
+    padding: 30px 28px;
+    border-radius: 20px;
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(194, 61, 61, 0.05);
+    transition: 0.3s ease;
+}
+
+.layanan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.layanan-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.layanan-card h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 28px;
+    color: #e66e60;
+    margin-bottom: 12px;
+}
+
+.layanan-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #45484d;
+    text-align: center;
+}
+
+.kindergarten-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.kelompok-card {
+    background-color: #fff0ed;
+    padding: 18px 12px;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.kelompok-card h4 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    color: #176b9e;
+    margin-bottom: 5px;
+}
+
+.kelompok-card span {
+    font-size: 14px;
+    color: #45484d;
+}
+
+@media (max-width: 480px) {
+    .kindergarten-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================
+   KURIKULUM
+===================================== */
+
+.kurikulum-section {
+    width: 100%;
+    background-color: #faf7f0;
+    padding: 65px 7%;
+}
+
+.kurikulum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: transparent;
+}
+
+.kurikulum-container h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 35px;
+    color: #e66e60;
+    margin-bottom: 20px;
+}
+
+.kurikulum-container p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #45484d;
+    text-align: justify;
+}
+
+/* =====================================
+   PENDEKATAN PEMBELAJARAN
+===================================== */
+
+.pendekatan-section {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background-color: #E8C6B8;
+    padding: 130px 7% 150px;
+    overflow: hidden;
+}
+
+.pendekatan-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pendekatan-container h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 35px;
+    color: #e66e60;
+    margin-bottom: 20px;
+}
+
+.pendekatan-container p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #45484d;
+    text-align: justify;
+}
+
+.pendekatan-wave-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 0;
+}
+
+.pendekatan-wave-top svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pendekatan-wave-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 0;
+}
+
+.pendekatan-wave-bottom svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .kurikulum-section {
+        padding: 45px 5%;
+    }
+
+    .kurikulum-container h2,
+    .pendekatan-container h2 {
+        font-size: 28px;
+    }
+
+    .kurikulum-container p,
+    .pendekatan-container p {
+        font-size: 15px;
+    }
+
+    .pendekatan-section {
+        padding: 110px 5% 120px;
+    }
+
+    .pendekatan-wave-top,
+    .pendekatan-wave-bottom {
+        height: 65px;
+    }
+}
+
+/* =====================================
+   PROGRAM UNGGULAN
+===================================== */
+
+.unggulan-section {
+    width: 100%;
+    padding: 70px 7%;
+    background-color: #faf7f0;
+    box-sizing: border-box;
+}
+
+.unggulan-container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.unggulan-container h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 45px;
+    color: #176b9e;
+    margin-bottom: 15px;
+}
+
+.unggulan-deskripsi {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #45484d;
+}
+
+.unggulan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.unggulan-card {
+    background-color: #d1f2f0;
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+.unggulan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.unggulan-icon {
+    width: 65px;
+    height: 65px;
+    background-color: #fff0ed;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.unggulan-card h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 24px;
+    color: #e66e60;
+    margin-bottom: 12px;
+}
+
+.unggulan-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #45484d;
+    margin-bottom: 15px;
+}
+
+.unggulan-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.unggulan-card li {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #45484d;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+    .unggulan-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .unggulan-section {
+        padding: 50px 5%;
+    }
+
+    .unggulan-container h1 {
+        font-size: 35px;
+    }
+
+    .unggulan-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .unggulan-card {
+        padding: 25px 20px;
+    }
+}
+
+/* =====================================
+   EKSTRAKURIKULER
+===================================== */
+
+.ekskul-section {
+    width: 100%;
+    margin-top: 50px;
+    padding: 70px 7%;
+    background-color: #ffffff;
+}
+
+.ekskul-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ekskul-container h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 45px;
+    color: #176b9e;
+    margin-bottom: 15px;
+}
+
+.ekskul-deskripsi {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #45484d;
+}
+
+.ekskul-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+
+.ekskul-card {
+    grid-column: span 2;
+    background-color: #ffd77a;
+    padding: 15px;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.ekskul-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.09);
+}
+
+.ekskul-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.ekskul-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.ekskul-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 13px;
+    display: block;
+}
+
+.ekskul-card h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 23px;
+    color: #e66e60;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.ekskul-penutup {
+    max-width: 950px;
+    margin: 45px auto 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #45484d;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    .ekskul-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ekskul-card,
+    .ekskul-card:nth-child(4),
+    .ekskul-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .ekskul-card:last-child {
+        grid-column: 1 / -1;
+        width: calc(50% - 13px);
+        justify-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .ekskul-section {
+        padding: 50px 5%;
+    }
+
+    .ekskul-container h1 {
+        font-size: 35px;
+    }
+
+    .ekskul-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ekskul-card,
+    .ekskul-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .ekskul-card img {
+        height: 220px;
+    }
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer-section {
+    width: 100%;
+    background-color: #EAF4F8;
+    padding-top: 55px;
+    color: #333;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px 45px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.5fr;
+    gap: 55px;
+    align-items: start;
+}
+
+.footer-brand img {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.footer-menu h3,
+.footer-address h3 {
+    font-size: 19px;
+    color: #176c9f;
+    margin-bottom: 12px;
+}
+
+.footer-line {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #e66e60;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #e66e60;
+    padding-left: 5px;
+}
+
+.footer-address p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.operasional-title {
+    margin-bottom: 5px !important;
+}
+
+.operasional-list {
+    margin-left: 25px;
+    margin-bottom: 18px;
+}
+
+.operasional-list p {
+    margin-bottom: 3px;
+}
+
+.footer-map {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.map-button {
+    display: inline-block;
+    background-color: #e66e60;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background-color: #176c9f;
+}
+
+.footer-bottom {
+    background-color: #176c9f;
+    text-align: center;
+    padding: 17px 15px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 0 25px 35px;
+    }
+
+    .footer-brand img {
+        width: 190px;
+    }
+
+    .footer-map iframe {
+        height: 200px;
+    }
+}

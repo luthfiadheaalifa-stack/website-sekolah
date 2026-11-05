@@ -1,0 +1,432 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pendaftaran Online | MIMORI</title>
+
+    <link rel="stylesheet" href="stylependaftaran.css">
+    <script src="scriptpendaftaran.js" defer></script>
+    <link rel="stylesheet" href="tombol-fixed.css">
+</head>
+
+ <!-- HEADER -->
+    <header>
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+            <div class="jam">
+                Buka: 08:00 - 12:00 WIB
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="foto/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://wa.me/6282247134926" target="_blank">
+                        <img src="foto/whatsaap.png" alt="WhatsApp">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <li><a href="#"><img src="foto/logo baru mimoti.png"></a></li>
+            </div>
+
+            <!-- MENU NAVIGASI -->
+            <div class="menu">
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil Sekolah</a>
+                <a href="program.html">Program Pendidikan</a>
+                <a href="fasilitas.html">Fasilitas</a>
+                <a href="SPMB.html">Pendaftaran</a>
+                <a href="project.html">Info Proyek</a>
+            </div>
+        </nav>
+    </header>
+
+<body>
+
+<section class="hero">
+    <p class="eyebrow">PENERIMAAN PESERTA DIDIK BARU</p>
+    <h1>Formulir Pendaftaran</h1>
+    <p>Silakan lengkapi data calon peserta didik dengan benar.</p>
+</section>
+
+<main class="container">
+<form id="registrationForm">
+
+<!-- 01 BIODATA ANAK -->
+<section class="form-section">
+    <div class="section-heading">
+        <span>01</span>
+        <div>
+            <h2>Biodata Calon Peserta Didik</h2>
+            <p>Data diri anak yang akan didaftarkan.</p>
+        </div>
+    </div>
+
+    <div class="form-grid">
+        <div class="field">
+            <label>Tahun Ajaran *</label>
+            <select name="schoolYear" required>
+                <option value="">Pilih Tahun Ajaran</option>
+                <option selected>2026/2027</option>
+                <option>2027/2028</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Jenis Pendaftaran *</label>
+            <select name="program" required>
+                <option value="">Pilih Program</option>
+                <option>Preschool</option>
+                <option>Kindergarten</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Nama Lengkap Anak *</label>
+            <input name="childName" required placeholder="Sesuai akta kelahiran">
+        </div>
+
+        <div class="field">
+            <label>Nama Panggilan</label>
+            <input name="nickname" placeholder="Nama panggilan anak">
+        </div>
+
+        <div class="field">
+            <label>Jenis Kelamin *</label>
+            <select name="gender" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Tempat Lahir *</label>
+            <input name="birthPlace" required>
+        </div>
+
+        <div class="field">
+            <label>Tanggal Lahir *</label>
+            <input type="date" name="birthDate" required>
+        </div>
+
+        <div class="field">
+            <label>NIK Anak *</label>
+            <input name="childNik" maxlength="16" pattern="[0-9]{16}" required>
+        </div>
+
+        <div class="field">
+            <label>Nomor WhatsApp Orang Tua *</label>
+            <input type="tel" name="parentWhatsapp" required>
+        </div>
+
+        <div class="field full">
+            <label>Alamat Domisili *</label>
+            <textarea name="address" required></textarea>
+        </div>
+
+        <div class="field">
+            <label>Provinsi *</label>
+            <input name="province" required>
+        </div>
+
+        <div class="field">
+            <label>Kabupaten / Kota *</label>
+            <input name="city" required>
+        </div>
+
+        <div class="field">
+            <label>Kecamatan *</label>
+            <input name="district" required>
+        </div>
+
+        <div class="field">
+            <label>Kelurahan *</label>
+            <input name="village" required>
+        </div>
+
+        <div class="field">
+            <label>Kode Pos</label>
+            <input name="postalCode">
+        </div>
+    </div>
+</section>
+
+<!-- 02 BIODATA ORANG TUA -->
+<section class="form-section">
+    <div class="section-heading">
+        <span>02</span>
+        <div>
+            <h2>Biodata Orang Tua</h2>
+            <p>Lengkapi data ayah dan ibu kandung.</p>
+        </div>
+    </div>
+
+    <h3 class="subheading">A. Data Ayah Kandung</h3>
+
+    <div class="form-grid">
+        <div class="field">
+            <label>NIK Ayah *</label>
+            <input name="fatherNik" maxlength="16" pattern="[0-9]{16}" required>
+        </div>
+
+        <div class="field">
+            <label>Nama Lengkap Ayah *</label>
+            <input name="fatherName" required>
+        </div>
+
+        <div class="field">
+            <label>Tanggal Lahir Ayah</label>
+            <input type="date" name="fatherBirth">
+        </div>
+
+        <div class="field">
+            <label>Pendidikan Terakhir</label>
+            <select name="fatherEducation">
+                <option value="">Pilih Pendidikan</option>
+                <option>SD</option><option>SMP</option>
+                <option>SMA/SMK</option><option>D1</option>
+                <option>D2</option><option>D3</option>
+                <option>S1</option><option>S2</option><option>S3</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Pekerjaan</label>
+            <input name="fatherJob">
+        </div>
+
+        <div class="field">
+            <label>Penghasilan Bulanan</label>
+            <select name="fatherIncome">
+                <option value="">Pilih Penghasilan</option>
+                <option>Di bawah Rp1.000.000</option>
+                <option>Rp1.000.000–Rp2.500.000</option>
+                <option>Rp2.500.001–Rp5.000.000</option>
+                <option>Rp5.000.001–Rp10.000.000</option>
+                <option>Di atas Rp10.000.000</option>
+                <option>Tidak berpenghasilan</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Nomor HP / WhatsApp</label>
+            <input type="tel" name="fatherPhone">
+        </div>
+    </div>
+
+    <h3 class="subheading">B. Data Ibu Kandung</h3>
+
+    <div class="form-grid">
+        <div class="field">
+            <label>NIK Ibu *</label>
+            <input name="motherNik" maxlength="16" pattern="[0-9]{16}" required>
+        </div>
+
+        <div class="field">
+            <label>Nama Lengkap Ibu *</label>
+            <input name="motherName" required>
+        </div>
+
+        <div class="field">
+            <label>Tanggal Lahir Ibu</label>
+            <input type="date" name="motherBirth">
+        </div>
+
+        <div class="field">
+            <label>Pendidikan Terakhir</label>
+            <select name="motherEducation">
+                <option value="">Pilih Pendidikan</option>
+                <option>SD</option><option>SMP</option>
+                <option>SMA/SMK</option><option>D1</option>
+                <option>D2</option><option>D3</option>
+                <option>S1</option><option>S2</option><option>S3</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Pekerjaan</label>
+            <input name="motherJob">
+        </div>
+
+        <div class="field">
+            <label>Penghasilan Bulanan</label>
+            <select name="motherIncome">
+                <option value="">Pilih Penghasilan</option>
+                <option>Di bawah Rp1.000.000</option>
+                <option>Rp1.000.000–Rp2.500.000</option>
+                <option>Rp2.500.001–Rp5.000.000</option>
+                <option>Rp5.000.001–Rp10.000.000</option>
+                <option>Di atas Rp10.000.000</option>
+                <option>Tidak berpenghasilan</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Nomor HP / WhatsApp</label>
+            <input type="tel" name="motherPhone">
+        </div>
+    </div>
+</section>
+
+<!-- 03 DATA WALI -->
+<section class="form-section">
+    <div class="section-heading">
+        <span>03</span>
+        <div>
+            <h2>Data Wali Calon Peserta Didik</h2>
+            <p>Isi jika anak ditanggung oleh wali selain orang tua kandung.</p>
+        </div>
+    </div>
+
+    <div class="field">
+        <label>Apakah anak ditanggung oleh wali selain orang tua kandung? *</label>
+        <div class="radio-line">
+            <label><input type="radio" name="hasGuardian" value="Ya" required> Ya</label>
+            <label><input type="radio" name="hasGuardian" value="Tidak"> Tidak</label>
+        </div>
+    </div>
+
+    <div id="guardianFields" class="guardian-box" hidden>
+        <div class="form-grid">
+            <div class="field">
+                <label>Nama Lengkap Wali *</label>
+                <input name="guardianName">
+            </div>
+
+            <div class="field">
+                <label>Hubungan dengan Anak *</label>
+                <input name="guardianRelation">
+            </div>
+
+            <div class="field">
+                <label>NIK Wali *</label>
+                <input name="guardianNik" maxlength="16" pattern="[0-9]{16}">
+            </div>
+
+            <div class="field">
+                <label>Pekerjaan Wali</label>
+                <input name="guardianJob">
+            </div>
+
+            <div class="field">
+                <label>Nomor HP / WhatsApp Wali *</label>
+                <input type="tel" name="guardianPhone">
+            </div>
+
+            <div class="field full">
+                <label>Alamat Wali *</label>
+                <textarea name="guardianAddress"></textarea>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 04 DOKUMEN -->
+<section class="form-section">
+    <div class="section-heading">
+        <span>04</span>
+        <div>
+            <h2>Dokumen Persyaratan</h2>
+            <p>Unggah dokumen PDF, JPG, atau PNG. Maksimal 5 MB per file.</p>
+        </div>
+    </div>
+
+    <div class="upload-grid">
+        <div class="upload-field">
+            <label>Akta Kelahiran Anak *</label>
+            <input type="file" name="birthCertificate" accept=".pdf,.jpg,.jpeg,.png" required>
+        </div>
+
+        <div class="upload-field">
+            <label>Kartu Keluarga (KK) *</label>
+            <input type="file" name="familyCard" accept=".pdf,.jpg,.jpeg,.png" required>
+        </div>
+
+        <div class="upload-field">
+            <label>KTP Ayah dan Ibu *</label>
+            <input type="file" name="parentId" accept=".pdf,.jpg,.jpeg,.png" required>
+        </div>
+
+        <div class="upload-field">
+            <label>Pas Foto Anak *</label>
+            <input type="file" name="childPhoto" accept=".jpg,.jpeg,.png" required>
+        </div>
+
+        <div class="upload-field full">
+            <label>Dokumen Pendukung Lainnya</label>
+            <input type="file" name="otherDocuments" multiple accept=".pdf,.jpg,.jpeg,.png">
+        </div>
+    </div>
+</section>
+
+<!-- 05 KONFIRMASI -->
+<section class="form-section">
+    <div class="section-heading">
+        <span>05</span>
+        <div>
+            <h2>Konfirmasi Pendaftaran</h2>
+            <p>Periksa kembali data sebelum mengirim formulir.</p>
+        </div>
+    </div>
+
+    <div class="confirmation">
+        <label class="check-line">
+            <input type="checkbox" required>
+            <span>Saya menyatakan bahwa seluruh data yang diisi adalah benar dan dapat dipertanggungjawabkan.</span>
+        </label>
+
+        <label class="check-line">
+            <input type="checkbox" required>
+            <span>Saya sebagai orang tua/wali telah membaca dan menyetujui ketentuan pendaftaran yang berlaku.</span>
+        </label>
+    </div>
+
+    <p class="notice">
+        Setelah formulir dikirim, pihak sekolah akan melakukan pemeriksaan data.
+        Informasi selanjutnya akan disampaikan melalui WhatsApp orang tua.
+    </p>
+
+    <div class="form-actions">
+        <button type="reset" class="btn btn-light">Reset Formulir</button>
+        <button type="submit" class="btn btn-primary">Kirim Pendaftaran</button>
+    </div>
+
+    <p id="formMessage" class="form-message"></p>
+</section>
+
+<!-- TOMBOL KEMBALI KE ATAS -->
+<a href="#" class="back-to-top" aria-label="Kembali ke atas">
+    ↑
+</a>
+
+<!-- TOMBOL WHATSAPP -->
+<a
+    href="https://wa.me/6282247134926"
+    class="whatsapp-button"
+    aria-label="Hubungi kami melalui WhatsApp"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <img src="foto/whatsaap.png" alt="WhatsApp">
+</a>
+
+</form>
+
+<footer>© 2026 PAUD · Formulir Pendaftaran Peserta Didik Baru</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

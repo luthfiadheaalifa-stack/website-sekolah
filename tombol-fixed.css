@@ -1,0 +1,97 @@
+
+/* =========================
+   TOMBOL KEMBALI KE ATAS
+========================= */
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 125px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #176fa5;
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #10567f;
+    transform: translateY(-4px);
+}
+
+/* =========================
+   TOMBOL WHATSAPP
+========================= */
+
+.whatsapp-button {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #20cf70;
+    border-radius: 50%;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.whatsapp-button:hover {
+    background-color: #16a85a;
+    transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media screen and (max-width: 768px) {
+    .back-to-top {
+        right: 20px;
+        bottom: 90px;
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    .whatsapp-button {
+        right: 20px;
+        bottom: 25px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .whatsapp-button img {
+        width: 25px;
+        height: 25px;
+    }
+}
